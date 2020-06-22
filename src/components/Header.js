@@ -5,10 +5,12 @@ export default class Header extends Component {
     return (
       <>
         <header className="App-header container text-center">
-          <h1>Hi i am Abdullahi and i develop websites</h1>
+          <h1>Hi i am Abdullahi and i develop web Apps</h1>
           <div className="container">
-            <button className="button1">Projects</button>
-            <button className="button1">Contact Me</button>
+            <button className="button1 mr-2">
+              <a href="#projects">Projects</a>
+            </button>
+            <button className="button1 ml-2">Contact Me</button>
           </div>
         </header>
       </>
