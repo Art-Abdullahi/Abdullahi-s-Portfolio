@@ -14,31 +14,23 @@ const Example = (props) => {
   const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
-    <div
-      style={{
-        color: "aqua",
-        position: "absolute",
-        width: "100%",
-        fontFamily: "Piedra",
-        backgroundColor: "transparent",
-      }}
-    >
+    <div className="navigator">
       <Navbar dark>
-        <NavbarBrand href="/" className="mr-auto" style={{ color: "aqua" }}>
-          <h3>Abdullahi</h3>
+        <NavbarBrand href="/" className="mr-auto" style={{ color: "#61dafb" }}>
+          <h2>Abdullahi</h2>
         </NavbarBrand>
         <NavbarToggler
           onClick={toggleNavbar}
-          className="mr-2"
-          style={{ background: "aqua", color: "black" }}
+          className="toggler"
+          style={{ background: "#61dafb", color: "black" }}
         />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
-              <h1>Projects</h1>
+              <h4>Projects</h4>
             </NavItem>
             <NavItem>
-              <h1>About</h1>
+              <h4>About</h4>
             </NavItem>
           </Nav>
         </Collapse>

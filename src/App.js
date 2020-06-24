@@ -1,18 +1,13 @@
 import React from "react";
 
 import "./App.css";
-import Header from "./components/Header";
-import Background from "./components/Particles";
-import Example from "./components/Navigator";
-import Projects from "./components/Projects";
+
+import Menu from "./components/Menu";
 
 function App() {
   return (
     <>
-      <Example />
-      <Header />
-      <Background />
-      <Projects />
+      <Menu />
     </>
   );
 }
