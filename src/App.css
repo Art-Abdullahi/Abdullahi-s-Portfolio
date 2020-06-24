@@ -158,6 +158,8 @@ header {
 }
 
 .menu-links nav ul li {
+  text-emphasis: none;
+  text-decoration: none;
   list-style: none;
   font-size: 6rem;
   font-weight: 700;

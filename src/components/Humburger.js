@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-
+import { Link } from "react-router-dom";
 const Humburger = ({ state }) => {
   let menu = useRef(null);
 
@@ -25,7 +25,9 @@ const Humburger = ({ state }) => {
           <div className="menu-links">
             <nav>
               <ul>
-                <li>Projects</li>
+                <Link to="/projects">
+                  <li>Projects</li>
+                </Link>
                 <li>About Me</li>
                 <li>Contact Me</li>
               </ul>

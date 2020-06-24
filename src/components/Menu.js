@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Humburger from "./Humburger";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
+import { withRouter } from "react-router-dom";
 
-const Menu = () => {
+const Menu = ({ history }) => {
   const [state, setstate] = useState({
     intial: false,
     clicked: null,
@@ -39,6 +40,15 @@ const Menu = () => {
       setdisabled(false);
     }, 1200);
   };
+
+  useEffect(() => {
+    history.listen(() => {
+      setstate({
+        clicked: false,
+        menuName: "Menu",
+      });
+    });
+  });
   return (
     <header>
       <div className="contain">
@@ -66,4 +76,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default withRouter(Menu);
