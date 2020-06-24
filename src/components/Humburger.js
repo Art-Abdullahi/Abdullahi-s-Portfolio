@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
-const Humburger = () => {
+const Humburger = ({ state }) => {
+  let menu = useRef(null);
+
+  useEffect(() => {
+    if (state.clicked === false) {
+      //close
+      menu.style.display = "none";
+    } else if (
+      state.clicked === true ||
+      (state.clicked === true && state.initial === null)
+    ) {
+      //open
+      menu.style.display = "block";
+    }
+  });
+
   return (
-    <div className="humburger-menu">
+    <div ref={(el) => (menu = el)} className="humburger-menu">
       <div className="menu-secondary-background-color"></div>
       <div className="menu-layer"></div>
       <div className="contain">

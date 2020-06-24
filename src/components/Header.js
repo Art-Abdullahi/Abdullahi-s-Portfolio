@@ -8,7 +8,7 @@ export default class Header extends Component {
   render() {
     return (
       <>
-        <header className="App-header container align-items-justify text-center">
+        <div className="App-header container mt-0 align-items-justify text-center">
           <img src={hero} alt="hero" height="220" style={{}} />
           <h1>Hi i am Abdullahi and i develop,design and deploy web Apps.</h1>
 
@@ -18,7 +18,7 @@ export default class Header extends Component {
             </button>
             <button className="button1 ml-2">Contact Me</button>
           </div>
-        </header>
+        </div>
       </>
     );
   }

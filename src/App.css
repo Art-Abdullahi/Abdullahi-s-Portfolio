@@ -77,6 +77,7 @@ h1 {
 /* Header */
 header {
   height: 100px;
+  background: transparent;
 }
 .inner-header {
   position: relative;
@@ -91,6 +92,12 @@ header {
   text-decoration: none;
   color: #61dafb;
 }
+
+.logo-active {
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
 .menu button {
   border: none;
   background: none;
@@ -102,6 +109,7 @@ header {
 
 /*Humburger menu*/
 .humburger-menu {
+  display: none;
   z-index: 9;
   top: 0;
   bottom: 0;
@@ -111,6 +119,7 @@ header {
   height: 100%;
   width: 100%;
 }
+
 .menu-secondary-background-color {
   background: black;
   top: 0;
@@ -124,7 +133,7 @@ header {
 }
 .menu-layer {
   position: absolute;
-  background: firebrick;
+  background: #61dafb;
   height: 100%;
   width: 100%;
 }
@@ -152,6 +161,7 @@ header {
   list-style: none;
   font-size: 6rem;
   font-weight: 700;
+
   cursor: pointer;
   height: 135px;
   overflow: hidden;
