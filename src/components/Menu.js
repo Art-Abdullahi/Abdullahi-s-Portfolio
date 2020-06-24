@@ -1,4 +1,5 @@
 import React from "react";
+import Humburger from "./Humburger";
 
 const Menu = () => {
   return (
@@ -13,6 +14,7 @@ const Menu = () => {
           </div>
         </div>
       </div>
+      <Humburger />
     </header>
   );
 };

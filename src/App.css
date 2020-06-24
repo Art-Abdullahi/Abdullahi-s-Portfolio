@@ -63,3 +63,140 @@ h1 {
   color: #61dafb;
   outline: none;
 }
+
+.contain {
+  height: auto;
+  width: auto;
+
+  margin: 0 auto;
+}
+.wrapper {
+  padding: 0 48px;
+}
+
+/* Header */
+header {
+  height: 100px;
+}
+.inner-header {
+  position: relative;
+  z-index: 10;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: 700;
+  text-decoration: none;
+  color: #61dafb;
+}
+.menu button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #61dafb;
+}
+
+/*Humburger menu*/
+.humburger-menu {
+  z-index: 9;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.menu-secondary-background-color {
+  background: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.menu-layer {
+  position: absolute;
+  background: firebrick;
+  height: 100%;
+  width: 100%;
+}
+.wrapper {
+  position: relative;
+}
+
+.menu-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 60px;
+}
+.menu-links nav {
+  display: block;
+  color: black;
+}
+.menu-links nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.menu-links nav ul li {
+  list-style: none;
+  font-size: 6rem;
+  font-weight: 700;
+  cursor: pointer;
+  height: 135px;
+  overflow: hidden;
+  position: relative;
+  width: 700px;
+}
+
+.info {
+  color: black;
+  width: 300px;
+}
+
+.info h3 {
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+
+.info h3 p {
+  margin: 0 auto;
+  font-size: 0.8rem;
+}
+
+.socials {
+  position: absolute;
+  bottom: -80px;
+  color: black;
+  margin-top: 16px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.socials span {
+  cursor: pointer;
+  margin: 0 32px;
+  transition: 0.3s ease-in-out;
+  font-weight: 400;
+}
+
+.socials span:first-child {
+  margin-left: 64x;
+}
+
+.socials span:hover {
+  color: #fff;
+  background: black;
+  padding: 8px 24px;
+  border-radius: 4px;
+}
