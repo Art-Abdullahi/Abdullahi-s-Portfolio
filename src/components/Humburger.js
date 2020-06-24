@@ -26,10 +26,21 @@ const Humburger = ({ state }) => {
             <nav>
               <ul>
                 <Link to="/projects">
-                  <li>Projects</li>
+                  <li>
+                    <a href="/">Projects</a>
+                  </li>
                 </Link>
-                <li>About Me</li>
-                <li>Contact Me</li>
+                <Link to="about">
+                  <li>
+                    {" "}
+                    <a href="/">About Me</a>
+                  </li>
+                </Link>
+                <Link to="/contact">
+                  <li>
+                    <a href="/">Contact Me</a>
+                  </li>
+                </Link>
               </ul>
             </nav>
             <div className="info">

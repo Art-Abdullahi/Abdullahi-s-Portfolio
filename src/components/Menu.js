@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Humburger from "./Humburger";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
-import { withRouter } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 const Menu = ({ history }) => {
   const [state, setstate] = useState({
@@ -55,18 +55,37 @@ const Menu = ({ history }) => {
         <div className="wrapper">
           <div className="inner-header">
             <div className={state.clicked ? "logo-active" : "logo"}>
-              ABDULLAHI
+              <Link to="/">
+                <h2>
+                  {" "}
+                  <a href="/">ABDULLAHI</a>
+                </h2>
+              </Link>
             </div>
             <div className="menu">
-              <button className="btn" disabled={disabled} onClick={handleMenu}>
+              <span>
                 {state.clicked ? (
-                  <GrClose style={{ color: "black", fontSize: "3rem" }} />
+                  <GrClose
+                    disabled={disabled}
+                    onClick={handleMenu}
+                    style={{
+                      color: "black",
+                      fontSize: "3rem",
+                      cursor: "pointer",
+                    }}
+                  />
                 ) : (
                   <GiHamburgerMenu
-                    style={{ color: "#61dafb", fontSize: "3rem" }}
+                    disabled={disabled}
+                    onClick={handleMenu}
+                    style={{
+                      color: "#61dafb",
+                      fontSize: "3rem",
+                      cursor: "pointer",
+                    }}
                   />
                 )}
-              </button>
+              </span>
             </div>
           </div>
         </div>

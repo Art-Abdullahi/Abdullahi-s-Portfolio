@@ -6,6 +6,7 @@ import Menu from "./components/Menu";
 import Home from "./components/Home";
 import Projects from "./components/pages/Projects";
 import About from "./components/pages/About";
+import Contact from "./components/pages/Contact";
 
 function App() {
   return (
@@ -20,6 +21,11 @@ function App() {
             render={(props) => <Projects {...props} />}
           />
           <Route exact path="/about" render={(props) => <About {...props} />} />
+          <Route
+            exact
+            path="/contact"
+            render={(props) => <Contact {...props} />}
+          />
         </Switch>
       </div>
     </Router>

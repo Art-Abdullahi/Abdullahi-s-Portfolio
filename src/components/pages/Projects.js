@@ -7,7 +7,7 @@ const Projects = () => {
       id="projects"
       className="container"
       style={{
-        height: "100vh",
+        height: "auto",
         width: "100%",
         border: "5px solid white",
       }}
