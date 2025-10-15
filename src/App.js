@@ -1,34 +1,28 @@
 import React from "react";
-import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
-
-import Menu from "./components/Menu";
-import Home from "./components/Home";
-import Projects from "./components/pages/Projects";
-import About from "./components/pages/About";
-import Contact from "./components/pages/Contact";
+import SiteHeader from "./components/SiteHeader";
+import HeroSection from "./components/HeroSection";
+import AboutSection from "./components/AboutSection";
+import ExperienceSection from "./components/ExperienceSection";
+import SkillsSection from "./components/SkillsSection";
+import ProjectsSection from "./components/ProjectsSection";
+import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Menu />
-        <Switch>
-          <Route exact path="/" render={(props) => <Home {...props} />} />
-          <Route
-            exact
-            path="/projects"
-            render={(props) => <Projects {...props} />}
-          />
-          <Route exact path="/about" render={(props) => <About {...props} />} />
-          <Route
-            exact
-            path="/contact"
-            render={(props) => <Contact {...props} />}
-          />
-        </Switch>
-      </div>
-    </Router>
+    <div className="app-shell">
+      <SiteHeader />
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <ExperienceSection />
+        <SkillsSection />
+        <ProjectsSection />
+        <ContactSection />
+      </main>
+      <Footer />
+    </div>
   );
 }
 
